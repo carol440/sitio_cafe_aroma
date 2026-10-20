@@ -1,30 +1,30 @@
+
 /* ===== BASE ===== */
 * { box-sizing: border-box; }
-body { font-family: Arial, sans-serif; margin: 0; background: #f5f0e6; color: #212121; }
+body { font-family: Arial, sans-serif; margin: 0; background: #f5f0e6; color: #333; }
 main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
 
 /* ===== CABECERA ===== */
 header {
-  background: #3e2723;
-  color: #ffffff;
-  padding: 1rem;
+    background: #3e2723;
+    color: #ffffff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 header h1 { margin: 0; }
+header nav a { color: #fff; margin-left: 1rem; text-decoration: none; }
 
 /* ===== MENU ===== */
+.menu-lista { list-style: none; padding: 0; }
+.menu-lista li { padding: 0.5rem 0; border-bottom: 1px solid #ddd; }
 
 /* ===== CONTACTO ===== */
+.form-contacto { display: flex; flex-direction: column; gap: 0.8rem; max-width: 400px; }
+.form-contacto input, .form-contacto textarea { padding: 0.5rem; border: 1px solid #ccc; }
+.form-contacto button { background: #3e2723; color: #fff; padding: 0.6rem; border: none; cursor: pointer; }
 
 /* ===== FOOTER ===== */
-/* ===== CABECERA ===== */
-header {
-  background: #4e342e;
-  color: #cccccc;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header h1 { margin: 0; }
-nav a { color: #f5f0e6; text-decoration: none; margin-left: 1.5rem; }
-nav a:hover { text-decoration: underline; }
+footer { background: #3e2723; color: #fff; text-align: center; padding: 1rem; margin-top: 2rem; }
+footer p { margin: 0.2rem 0; }
